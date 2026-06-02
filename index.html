@@ -4,7 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나의 포트폴리오</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 기본 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* 섹션 및 카드 스타일 */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        hr {
+            margin: 15px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+
+        .intro-text {
+            color: #555;
+            font-style: italic;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+            border-left: 3px solid #1abc9c;
+        }
+
+        .goal-list {
+            list-style-type: dashed;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .goal-list li {
+            border-left: none;
+            padding-left: 0;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #34495e;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #16a085;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,13 +145,14 @@
         <nav>
             <a href="#about">About Me</a>
             <a href="#education">Education</a>
-            <a href="#skills">Skills & Projects</a>
+            <a href="#career-goals">Career Goals</a>
+            <a href="#etc">Experience</a>
         </nav>
     </header>
 
     <div class="container">
         <section id="about">
-            <h2>About Me</h2>
+            <h2>1. 자기소개 / About Me</h2>
             <div class="card">
                 <p><strong>전공:</strong> 인공지능공학</p>
                 <p><strong>관심 분야:</strong> Computer Vision, 시스템 프로그래밍, 데이터 구조</p>
@@ -35,7 +168,7 @@
         </section>
 
         <section id="education">
-            <h2>Education</h2>
+            <h2>2. Education</h2>
             <div class="card">
                 <ul>
                     <li><strong>학교명:</strong> 조선대학교</li>
@@ -82,115 +215,3 @@
 
 </body>
 </html>
-
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-} 
-
-body { 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    line-height: 1.6; 
-    background-color: #f4f7f6; 
-    color: #333; 
-} 
-
-.container { 
-    max-width: 800px; 
-    margin: 30px auto; 
-    padding: 0 20px; 
-} 
-
-header { 
-    background-color: #2c3e50; 
-    color: #fff; 
-    padding: 20px; 
-    text-align: center; 
-    position: sticky; 
-    top: 0; 
-} 
-
-header h1 { 
-    margin-bottom: 10px; 
-} 
-
-nav a { 
-    color: #fff; 
-    text-decoration: none; 
-    margin: 0 15px; 
-    font-weight: bold; 
-} 
-
-nav a:hover { 
-    color: #1abc9c; 
-} 
-
-section { 
-    margin-bottom: 40px; 
-} 
-
-h2 { 
-    color: #2c3e50; 
-    border-bottom: 2px solid #2c3e50; 
-    padding-bottom: 5px; 
-    margin-bottom: 15px; 
-} 
-
-.card { 
-    background: #fff; 
-    padding: 25px; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-} 
-
-.card p { 
-    margin-bottom: 10px; 
-} 
-
-ul { 
-    list-style-type: none; 
-} 
-
-ul li { 
-    margin-bottom: 12px; 
-    padding-left: 5px; 
-    border-left: 3px solid #1abc9c; 
-} 
-
-.btn { 
-    display: inline-block; 
-    background-color: #1abc9c; 
-    color: white; 
-    padding: 10px 15px; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    margin-top: 10px; 
-} 
-
-.btn:hover { 
-    background-color: #16a085; 
-} 
-
-footer { 
-    text-align: center; 
-    padding: 20px; 
-    background-color: #2c3e50; 
-    color: white; 
-    margin-top: 5px; 
-} 
-
-.goal-list { 
-    list-style-type: dashed; 
-    padding-left: 20px; 
-    margin-top: 10px; 
-} 
-
-.goal-list li { 
-    border-left: none; 
-    padding-left: 0; 
-    margin-bottom: 8px; 
-    font-size: 1.1rem; 
-    font-weight: 500; 
-    color: #34495e; 
-}
